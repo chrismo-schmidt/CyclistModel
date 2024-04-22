@@ -48,7 +48,7 @@ class roadUser(object):
         
         
     def defineControlled(self, G):
-        self.wish = min(max(np.random.normal(loc=5.3, scale=1.4, size=1),3.0),8.0)
+        self.wish = min(max(np.random.normal(loc=5.3, scale=1.4, size=1)[0],3.0),8.0)
         self.Tv = min(max(np.random.normal(loc=3, scale=1, size=1),2.0),4)
         self.Rv = min(max(np.random.normal(loc=6, scale=0.1, size=1),4),8)
         self.gv = min(max(np.random.normal(loc=1, scale=0.1, size=1),0.97),1.05)
